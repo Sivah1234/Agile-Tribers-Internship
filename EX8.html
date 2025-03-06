@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .lineon div{
+        display:grid;
+        justify-content: center;
+        align-items: center;
+        border:0.1px solid rgb(14, 13, 13);
+    }
+    .lineon{
+        display: grid;
+        width: 350px;
+        grid-template-columns: 1fr 3fr ;
+        grid-template-rows:5fr 2fr 20fr 5fr ;
+        grid-template-areas: 
+        "h h"
+        "n n"
+        "l m"
+        "f f";
+
+    }
+    .Header{
+        grid-area: h;
+        background-color: rgb(152, 121, 167);
+        color: #000;
+    }
+    .Nav{
+        grid-area: n;
+        background-color: rgb(101, 40, 158);
+        color: beige;
+    }
+    .left{
+        grid-area: l;
+        background-color: blanchedalmond;
+        color: #000;
+    }
+    .Footer{
+        grid-area: f;
+        background-color: hotpink;
+        color: #000;
+    }
+</style>
+<body>
+    <div class="lineon">
+        <div class="Header">Header</div>
+        <div class="Nav">Navigation Bar</div>
+        <div class="left">Left panel</div>
+        <div class="main">Main Content</div>
+        <div class="Footer">Footer</div>
+    </div>
+</body>
+</html>

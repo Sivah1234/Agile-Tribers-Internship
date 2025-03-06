@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .live div{
+        display :grid;
+        justify-content: center;
+        align-items: start;
+        border:0.1px solid black ;
+        
+    }
+    .live{
+        display:grid ;
+        grid-template-columns: 1fr 5fr;
+        grid-template-rows: 10vh 70vh 10vh;
+        grid-template-areas:
+         "h h"
+         "nav arti"
+         "foo foo"
+        ;
+    }
+    .Header{
+        grid-area:h ;
+        background-color:rgb(194, 194, 22);
+        color: #f8f3f3;
+    }
+    .nav{
+        grid-area:nav ;
+        background-color: blue;
+        color: #f8f7f7;
+    }
+    .article{
+        grid-area:arti ;
+        background-color: darkgreen;
+        color: #f8f3f3;
+    }
+    .Footer{
+        grid-area:foo ;
+        background-color: brown;
+        color: #f8f7f7;
+    }
+</style>
+<body>
+    <div class="live">
+        <div class="Header">Header</div>
+        <div class="nav">Nav</div>
+        <div class="article">article</div>
+        <div class="Footer">Footer</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header"> Header </div>
+        <div class="nav"> Navigation Bar </div>
+        <div class="sidediv">
+            <div class="side"> Slideshow</div>
+        </div>
+        <div class="main2">
+            <div class="whitebg"></div>
+            <div class="whitebg"></div>
+            <div class="whitebg"></div>
+        </div>
+        <div class="footer"> Footer </div>
+    </div>
+
+    <style>
+         body
+        {
+            background-color: lightgrey;
+        }
+        .header
+        {
+            width:100%;
+            height:110px;
+            background-color: rgb(37, 35, 35);
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .nav
+        {
+            border:5px solid white;
+            width:100%;
+            height:40px;
+            background-color: gray;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sidediv
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .side
+        {
+            width:98%;
+            background-color: rgb(68, 65, 65);
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:160px;
+
+
+        }
+        .main2
+        {
+            display: flex;
+            flex-direction: row;
+            gap:40px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            width:100%;
+        }
+        .whitebg
+        {
+            background-color: white;
+            width:410px;
+            height:160px;
+        }
+        .footer
+        {
+            background-color: rgb(68, 65, 65);
+            height:40px;
+            width:100%;
+            border-top: 5px solid white;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div
+        {
+            color:white;
+        }
+    </style>
+</body>
+</html>

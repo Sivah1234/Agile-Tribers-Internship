@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container4{
+    display: inline-grid;
+    grid-template-areas: "header header header" 
+                           "menu main right"
+                           "menu footer footer";
+   grid-template-columns: 1fr 2fr 3fr;
+   grid-template-rows: 1fr 1fr auto;
+   gap:5px;
+   background-color:rgb(10, 141, 161) ;
+   text-align: center;
+   padding: 5px;
+}
+.container4 *{
+    display: flex;
+    background-color: rgba(168, 191, 191, 0.865);
+    border: none;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+.container4 *:hover{
+    opacity:0.8;
+    background-color: rgb(145, 169, 176);
+}
+.container4 .header{grid-area:header;}
+.container4 .menu{grid-area:menu;}
+.container4 .main{grid-area:main;}
+.container4 .right{grid-area:right;}
+.container4 .footer{grid-area:footer;}
+</style>
+<body>
+      <div class="container4">
+        <button class="header">Header</button>
+        <button class="menu">Menu</button>
+        <button class="main">Main</button>
+        <button class="right">Right</button>
+        <button class="footer">Footer</button>
+      </div>
+</body>
+</html>

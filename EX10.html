@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .Layoute div{
+        display: grid;
+        justify-content:center;
+        align-items:start;
+        border:1px solid #f9f5f5;
+        background-color: rgb(146, 225, 225);
+    
+
+         
+    }
+    .Layoute{
+        display: grid;
+        justify-content: center;
+        column-gap: 19px;
+        row-gap: 7px;
+    
+
+        grid-template-columns:1fr 1fr 1fr ;
+        grid-template-rows: 1fr 2fr 4fr 3fr 1fr;
+        grid-template-areas: 
+        "l l l" 
+        "nav nav nav"
+        "fe fe fe"
+        "one two thr"
+        "u u u";
+    
+
+    }
+    .logo{
+        grid-area: l;
+        background-color:lightblue;
+        color: black;
+        font-size: 40px;
+        font-weight: 200;
+    }
+    
+    .nav{
+        grid-area: nav;
+        background-color:lightblue;
+        color: black;
+        padding-top: 30px;
+        word-spacing: 15px;
+    }
+    
+    .Features{
+        grid-area: fe;
+        background-color:lightblue;
+        color: black;
+    }
+    .one{
+        background-color:lightblue;
+        color: black;
+        grid-area: one;
+    }
+    .two{
+        background-color:lightblue;
+        color: black;
+        grid-area: two;
+    }
+    .three{
+        grid-area: thr;
+        background-color:lightblue;
+        color: black;
+    }
+    .footer{
+        grid-area: u;
+        background-color:lightblue;
+        color: black;
+    }
+</style>
+<body>
+    <div class="Layoute">
+        <div class="logo">Logo</div>
+
+        <div class="nav"><span>
+                <a href="#">home</a>
+                <a href="#">products</a>
+                <a href="#">service</a>
+                <a href="#">About</a>
+                <a href="#">contact</a></span>
+        </div>
+
+        <div class="Features">Feature</div>
+
+        <div class="one">column one</div>
+
+        <div class="two">column Two</div>
+
+        <div class="three">column Three</div>
+
+        <div class="footer">copyright 2011</div>
+    </div>
+
+</body>
+</html>

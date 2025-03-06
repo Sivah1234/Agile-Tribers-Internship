@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+
+body {
+    background-color: #d3d3d3; /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.all {
+    display: grid;
+    grid-template-areas:
+        "title title title"
+        "nav nav nav"
+        "intro intro intro"
+        "main main sidebar"
+        "footer footer footer";
+    grid-template-columns: 3fr 2fr 2fr;
+    grid-template-rows: auto auto 3fr 8fr 4fr ;
+    gap: 10px;
+}
+
+.page-title {
+    grid-area: title;
+    margin-bottom: 0;
+    width: 200px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.navigation {
+    grid-area: nav;
+    margin-bottom: 0;
+    gap: 100px;
+    background-color: #555;
+    color: white;
+    padding: 15px;
+    text-align: center;
+
+}
+
+.introduction {
+    grid-area: intro;
+    background-color: #777;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-content {
+    grid-area: main;
+    background-color: #111;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #999;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #666;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+</style>
+<body>
+
+    <div class="all">
+        <header class="page-title">Page title</header>
+        <nav class="navigation">Navigation</nav>
+        <section class="introduction">Introduction</section>
+        <main class="main-content">Main content area</main>
+        <aside class="sidebar">Sidebar</aside>
+        <footer class="footer">Footer</footer>
+    </div>
+
+</body>
+</html>

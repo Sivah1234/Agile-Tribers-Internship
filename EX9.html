@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ex9.css">
+</head>
+<style>
+    .para1{
+    font-size: 20px;
+    width: 660px;
+    border-color: darkslategray;
+    border: 1px solid darkslategray;
+    color: white;
+    background-color: darkslategray;
+    padding-left: 7px;
+    height: 30px;
+    padding-top: 6px;
+    margin-bottom: 0px;
+    margin-left: 270px;
+}
+.para2{
+    font-size: 20px;
+    font-family: verdana;
+    margin-left: 550px;
+    margin-bottom: 5px;
+    margin-top: 8px;
+    
+}
+.body{
+    display: grid;
+    grid-template-rows: 70px 150px 50px 100px 55px 1fr ;
+    grid-template-columns: 350px 1fr;
+    grid-template-areas: 
+    "header header"
+    "intro hero"
+    "intro action"
+    "feature feature"
+    "copy action1"
+    "footer footer";
+    width: 630px;
+    height: 480px;
+    border: 1px solid rgb(145, 199, 187);
+    text-align: center;
+    font-weight: bold;
+    font-family: arial;
+    margin-left: 300px;
+}
+.header{
+    grid-area: header;
+    border-color: rgb(20, 163, 132);
+    background-color: rgb(97, 187, 168);
+    border-bottom: 10px solid rgb(145, 199, 187);
+    padding-top: 20px;
+}
+.intro{
+    grid-area: intro;
+    border-color: rgb(20, 163, 132);
+    border-left: 10px solid rgb(145, 199, 187);
+    background-color: rgb(97, 187, 168);
+    padding-top: 90px;
+}
+.hero{
+    grid-area: hero;
+    border-color: rgb(20, 163, 132);
+    border-left: 18px solid rgb(145, 199, 187);
+    border-right: 14px solid rgb(145, 199, 187);
+    background-color: rgb(97, 187, 168);
+    padding-top: 65px;
+}
+.action{
+    grid-area: action;
+    border-color: rgb(20, 163, 132);
+    border-left: 18px solid rgb(145, 199, 187);
+    border-right: 14px solid rgb(145, 199, 187);
+    border-top: 10px solid rgb(145, 199, 187);
+    background-color: rgb(207, 228, 25);
+    padding-top: 11px;
+}
+.feature{
+    grid-area: feature;
+    border-color: rgb(20, 163, 132);
+    border-left: 10px solid rgb(145, 199, 187);
+    border-top: 10px solid rgb(145, 199, 187);
+    border-bottom: 10px solid rgb(145, 199, 187);
+    border-right: 14px solid rgb(145, 199, 187);
+    background-color: rgb(97, 187, 168);
+    padding-top: 33px;
+}
+.copy{
+    grid-area: copy;
+    border-color: rgb(20, 163, 132);
+    border-left: 10px solid rgb(145, 199, 187);
+    background-color: rgb(97, 187, 168);
+    padding-top: 18px;
+}
+.action1{
+    grid-area: action1;
+    border-color: rgb(20, 163, 132);
+    border-left: 18px solid rgb(145, 199, 187);
+    border-right: 14px solid rgb(145, 199, 187);
+    background-color: rgb(207, 228, 25);
+    padding-top: 18px;
+}
+.footer{
+    grid-area: footer;
+    border-color: rgb(20, 163, 132);
+    border-top: 10px solid rgb(145, 199, 187);
+    background-color: rgb(97, 187, 168);
+    padding-top: 15px;
+}
+</style>
+<body>
+    <div class="conatainer">
+        <p class="para1">Original Wireframe</p>
+        <p class="para2">&lt;<b>600px</b>&gt;</p>
+    <div class="body">
+        <header class="header">Header</header>
+        <intro class="intro">Intro Copy</intro>
+        <div class="hero">Hero Image</div>
+        <div class="action">Call to Action</div>
+        <div class="feature">Features</div>
+        <div class="copy">More Copy</div>
+        <div class="action1">Call to Action</div>
+        <footer class="footer">Footer</footer>
+    </div>
+    </div>
+</body>
+</html>
