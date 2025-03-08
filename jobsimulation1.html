@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        
+        nav {
+            background-color: #fdfcfc;
+            overflow: hidden;
+            display: flex; 
+            align-items: center; 
+            padding: 10px 0; 
+        }
+
+        nav .heading {
+            color: rgb(13, 2, 2);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+            margin-right: auto; 
+            font-weight: bold;
+        }
+
+        nav a {
+            color: rgb(7, 7, 7);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        nav a:hover {
+            background-color: #0a0a0a;
+            color: rgb(201, 194, 194);
+        }
+
+        
+        .intro {
+            background: #010212;
+            color: aliceblue;
+            margin: 0;
+            width: 100%;
+            min-height: 90vh; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: monospace;
+            padding: 20px;
+        }
+
+        .intro h1 {
+            font-size: 70px;
+            color: rgb(227, 129, 32);
+            margin-bottom: 30px;
+        }
+
+        .intro p {
+            font-size: 18px;
+            max-width: 800px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .grid1{
+            display: grid;
+            grid-template-columns: 6fr 9fr;
+            column-gap: 10%;
+            margin: 40px;
+            
+        }
+        .para1{
+            diplay:flex;
+            width: 700px;
+            padding: 20px;
+            background-color: rgb(4, 5, 5);
+            color: #fdfcfc;
+            border-radius: 15px;
+
+        }
+        
+        .para2{
+            diplay:flex;
+            width: 300px;
+            height: 200px;
+            padding: 20px;
+            background-color: rgb(255, 0, 0);
+            color: #000;
+            border-radius: 15px;
+
+        }
+        .grid2{
+            display: grid;
+            margin-left: 300px;
+            grid-template-columns: 6fr 9fr;
+            column-gap: 10%;
+            margin: 40px;
+        }
+
+        .para3{
+            diplay:flex;
+            width: 700px;
+            height: 200px;
+            padding: 20px;
+            background-color: rgb(3, 91, 66);
+            color: #000;
+            border-radius: 15px;
+            
+            
+        }
+        .para4{
+            diplay:flex;
+            width: 300px;
+            height: 200px;
+            padding: 20px;
+            background-color: rgb(1, 1, 7);
+            color: #f9f7f7;
+            border-radius: 15px;
+        }
+
+        .serhead{
+            display: flex;
+            justify-content: center;
+        }
+
+        .grid3{
+            display: grid;
+            margin-left: 500px;
+            grid-template-columns: 6fr 9fr;
+            column-gap: -75px;
+            padding-bottom: 5px;
+        }
+
+        .para5{
+            diplay:flex;
+            width: 300px;
+            height: 200px;
+            padding: 20px;
+            background-color: rgb(104, 116, 130);
+            color: #000;
+            border-radius: 15px;
+        }
+        .footer{
+            
+            text-align: center;
+            background-color: #010212;
+            color: #fdfcfc;
+            margin-top: 30px;
+            height: 100px;
+
+        }
+        h1,h5{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="heading">REET</div>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="intro">
+        <h1>WELCOME TO REET</h1>
+        <p>Your Trusted IT Solutions Partner...</p>
+        <p>
+            At Reet, we are committed to delivering cutting-edge IT solutions that empower businesses and drive innovation.
+            Whether it's software development, cybersecurity, cloud computing, or digital transformation, our expert team ensures seamless technology integration tailored to your needs.
+        </p>
+    </div>
+    <h1 class="serhead">Our Projects</h1>
+
+    <div class="grid1">
+       <div class="para1"><ul><li>.....> software Development</li><br>
+       <li>.....> Developing APls</li>
+       <br>
+       <li>.....> Cloud migration</li>
+       <br>
+       <li>.....> Setting up or Upgrading hardware</li>
+       <br>
+       <li>.....>Data-Related Project </li>
+       <br>
+       <li>.....>IT Security Project</li></ul></div>
+       <div class="para2"><p><b>Key Project-Related Concepts:</b> Project Management: Planning, executing, monitoring, and closing projects. Using methodologies like Agile, Scrum, Waterfall, or Kanban. Managing resources, timelines, and budgets. Requirements Gathering: Defining the scope and objectives of the project. Gathering input from stakeholders. Development Lifecycle: The stages of software development </p></div>
+    </div>
+
+    <h1 class="serhead">Our Services</h1>
+    <br>
+    <br>
+
+    <div class="grid2">
+        <div class="para3"><ul>
+        <li> IT Service Management (ITSM)...........</li><br>
+        <li> business Service Management..........</li><br>
+        <li> Resolving disruption to service...........</li><br>
+        <li> Management Service...........</li><br>
+        <li> Providing a central point...........</li><br>
+        </ul>
+        
+           </div>
+        <div class="para4"><ul>
+            <li> Support </li><br>
+            <li> Solution</li><br>
+            <li> Delivery</li><br>
+            <li> Customer stisfaction</li><br>
+            <li> Maintenance</li><br>
+            </ul></div>
+     </div>
+     <br>
+<h1>Why Choose REET Software's?</h1>
+     <div class="grid3">
+        
+        <div class="para5"><p> > At REET Software's, we specialize in delivering tailored, data-driven digital marketing strategies designed to boost your brand’s visibility, attract more qualified leads, and drive measurable growth. With a dedicated team of experts, transparent reporting, and a proven track record of success, we focus on delivering real results that align with your business goals—all with seamless communication and scalable solutions that grow with you</p></div>
+    </div>
+
+    <footer class="footer">
+         <h5>Follow US</h5>
+         <a href =""><i class="facbook"><img src="iiiiiiiiiii.png" width="45px"></i></a>
+         <a href =""><i class="facbook"><img src="ttt.png"  width="45px"></i></a>
+         <a href =""><i class="facbook"><img src="llllllll.png" width="47px"></i></a>
+         <br>
+         <t>Copyright © 2024 All Rights Reserved.</t>
+
+    
+    </footer>
+
+</body>
+</html>
