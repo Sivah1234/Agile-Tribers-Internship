@@ -1,0 +1,10 @@
+let a=[1,2,4,5];
+console.log(a[2])
+console.log(a.length)
+console.log(a.toString())
+console.log(a.at(3))
+console.log(a.join("*"))
+a.push(8)
+console.log(a)
+a.pop()
+console.log(a)
