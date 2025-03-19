@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .study {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            height: 300px;
+            margin-left: 180px;
+    
+        }
+        .study div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 0.1px solid rgb(14, 13, 13);
+        }
+        .header {
+            background-color: rgb(205, 125, 187);
+            color: rgb(10, 10, 10);
+            flex: 2; 
+        }
+        .Navigation {
+            background-color: blueviolet;
+            color: #f4f0f0;
+            flex: 1;
+        }
+        .main {
+            background-color: #f4f0f0;
+            color: #070707;
+            flex: 3;
+        }
+        .Footer {
+            background-color: rgb(142, 87, 194);
+            color: #000;
+            flex: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="study">
+        <div class="header">Header</div>
+        <div class="Navigation">Navigation bar</div>
+        <div class="main">Main content</div>
+        <div class="Footer">Footer</div>
+    </div>
+</body>
+</html>
