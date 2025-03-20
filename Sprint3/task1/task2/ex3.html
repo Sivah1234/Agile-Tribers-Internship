@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .maindiv1
+    {
+        width:100%;
+        height:80px;
+        border:2px solid black;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+       margin-bottom:50px;
+
+
+    }
+    .row1
+    {
+        background-color: rgb(120, 187, 120);
+        width:25%;
+        height:50px;
+        border:1px solid black;
+        display: flex;
+      
+    }
+    .maindiv2
+    {
+        width:100%;
+        height:80px;
+        border:2px solid black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+       margin-bottom:50px;
+
+        align-items: center;
+
+    }
+    .row2
+    {
+        background-color: rgb(120, 187, 120);
+        width:20%;
+        height:50px;
+        border:1px solid black;
+        display: flex;
+    }
+
+
+    .maindiv3
+    {
+        width:100%;
+        height:80px;
+        border:2px solid black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+       margin-bottom:50px;
+
+        align-items: center;
+    }
+    .main1
+    {
+        display: flex;
+        justify-self: flex-start;
+        width:40%;
+        height:50px;
+    }
+    .main1row3
+    {
+        width:40%;
+        height:50px;
+        background-color: rgb(120, 187, 120);
+        border:1px solid black;
+
+    }
+    .row3
+    {
+        background-color: rgb(120, 187, 120);
+        width:20%;
+        height:50px;
+        border:1px solid black;
+    }
+
+
+
+
+
+    .maindiv4
+    {
+        width:100%;
+        height:80px;
+        border:2px solid black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+       margin-bottom:50px;
+
+        align-items: center;
+    }
+    .main2
+    {
+        display: flex;
+        justify-self: flex-end;
+        width:40%;
+        height:50px;
+    }
+    .main2row4
+    {
+        width:40%;
+        height:50px;
+        background-color: rgb(120, 187, 120);
+        border:1px solid black;
+        justify-self: flex-end;
+    }
+    .row4
+    {
+        background-color: rgb(120, 187, 120);
+        width:20%;
+        height:50px;
+        border:1px solid black;
+    }
+    .maindiv5
+    {
+        width:100%;
+        height:80px;
+        border:2px solid black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+       margin-bottom:50px;
+
+        align-items: center;
+    }
+    .main3
+    {
+        display: flex;
+        justify-self: flex-start;
+        width:40%;
+        height:50px;
+    }
+    .main3row5
+    {
+        width:40%;
+        height:50px;
+        background-color: rgb(120, 187, 120);
+        border:1px solid black;
+
+    }
+    .row5
+    {
+        background-color: rgb(120, 187, 120);
+        width:20%;
+        height:50px;
+        border:1px solid black;
+    }
+    .p1,.p2{
+        text-align: center;
+        padding: 10px;
+    }
+    .p3,.p4{
+        padding-bottom: 10px;
+    }
+    
+    
+    
+   
+</style>
+<body>
+    <div class="maindiv1">
+        <div class="row1"></div>
+        <div class="row1"></div>
+        <div class="row1"></div>
+        <div class="row1"></div>
+    </div>
+    <div class="p1">justify-self will do nothing, because there is no space to distribute</div>
+
+    <div class="maindiv2">
+        <div class="row2"></div>
+        <div class="row2"></div>
+        <div class="row2"></div>
+        <div class="row2"></div>
+    </div>
+    <div class="p2">now that we have space to distribute we can use justify-self</div>
+
+
+    <div class="maindiv3">
+        <div class="main1">
+            <div class="main1row3"></div>
+            <div class="main1row3"></div>
+        </div>
+        <div class="row3"></div>
+        <div class="row3"></div>
+    </div>
+    <div class="p3">justify-self:flex-start</div>
+
+
+
+    <div class="maindiv4">
+        <div class="row4"></div>
+        <div class="main2">
+            <div class="main2row4"></div>
+            <div class="main2row4"></div>
+        </div>
+        <div class="row4"></div>
+    </div><div class="p4">justify-self:flex-end</div>
+
+
+
+
+    <div class="maindiv5">
+        <div class="main3">
+            <div class="main3row5"></div>
+            <div class="main3row5"></div>
+        </div>
+        <div class="row5"></div>
+        <div class="row5"></div>
+    </div>
+
+</body>
+</html>
