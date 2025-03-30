@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mouse Enter and Leave Event</title>
+  <style>
+    #mouseArea {
+      width: 200px;
+      height: 200px;
+      background-color: lightblue;
+      text-align: center;
+      line-height: 200px; 
+      border: 2px solid #000;
+      font-size: 20px;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="mouseArea">
+    Hover over me!
+  </div>
+
+  <script>
+    let mouseArea = document.getElementById('mouseArea');
+    mouseArea.addEventListener('mouseenter', function() {
+      mouseArea.innerHTML = "Mouse entered!";
+    });
+    mouseArea.addEventListener('mouseleave', function() {
+      mouseArea.innerHTML = "Mouse left!";
+    });
+  </script>
+
+</body>
+</html>

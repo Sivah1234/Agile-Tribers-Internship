@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input Box and Button</title>
+</head>
+<body>
+  <input type="text" id="userInput" placeholder="Type something here">
+  <button id="showButton">Show Input</button>
+  <script>
+    let inputBox = document.getElementById('userInput');
+    let button = document.getElementById('showButton');
+    button.addEventListener('click', function() {
+      let userInput = inputBox.value;
+      console.log("User Input: " + userInput);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> OnChange Event</title>
+</head>
+<body>
+  <input type="text" id="userInput" placeholder="Type something here">
+  <h1 id="displayHeading"></h1>
+  <script>
+    let inputBox = document.getElementById('userInput');
+    let displayHeading = document.getElementById('displayHeading');
+    inputBox.addEventListener('change', function() {
+      let userInput = inputBox.value;
+      displayHeading.innerHTML = "Input Changed: " + userInput;
+    });
+  </script>
+</body>
+</html>
+

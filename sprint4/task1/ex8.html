@@ -1,0 +1,17 @@
+Task 8 :
+
+<html>
+	<head>
+		<title>Task 8</title>
+	</head>
+	<body>
+		<p>Press Any Key On Your Keyboard!</p>
+		<p id="keyPress">Key press will be updated here...</p>
+	<script>
+		document.addEventListener("keydown", function(event){
+			var key = event.key;
+			document.getElementById("keyPress").textContent="You Pressed : " + key;
+		});
+	</script>
+	</body>
+</html>
