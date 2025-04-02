@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+
+  <h2>Select Your Options</h2>
+
+  <div>
+    <p>Choose a gender:</p>
+    <label><input type="radio" name="gender" value="Male" checked> Male</label>
+    <label><input type="radio" name="gender" value="Female"> Female</label>
+  </div>
+
+  <div>
+    <p>Select your hobbies:</p>
+    <label><input type="checkbox" class="hobby" value="Reading"> Reading</label>
+    <label><input type="checkbox" class="hobby" value="Gaming"> Gaming</label>
+    <label><input type="checkbox" class="hobby" value="Cooking"> Cooking</label>
+  </div>
+
+  <button onclick="displaySelected()">Submit</button>
+
+  <p id="output">Selected values will be shown here.</p>
+
+  <script>
+    function displaySelected() {
+      const gender = document.querySelector('input[name="gender"]:checked').value;
+      const selectedHobbies = [];
+      const checkboxes = document.querySelectorAll('input.hobby:checked');
+
+      checkboxes.forEach((checkbox) => {
+        selectedHobbies.push(checkbox.value);
+      });
+
+      const message = `Gender: ${gender}<br>Hobbies: ${selectedHobbies.join(', ')}`;
+      document.getElementById('output').innerHTML = message;
+    }
+  </script>
+
+</body>
+</html>

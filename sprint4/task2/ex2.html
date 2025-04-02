@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 2</title>
+  <style>
+    .text-box {
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 id="heading">Original Heading</h2>
+
+  <p class="text-box">Box 1</p>
+  <p class="text-box">Box 2</p>
+  <p class="text-box">Box 3</p>
+
+  <button onclick="exploreDOM()">Change Content & Style</button>
+
+  <script>
+    function exploreDOM() {
+      document.getElementById("heading").innerText = "Updated Heading";
+
+      document.querySelector(".text-box").style.color = "blue";
+
+      const allBoxes = document.querySelectorAll(".text-box");
+      allBoxes.forEach(box => {
+        box.style.fontWeight = "bold";
+        box.style.backgroundColor = "#f0f0f0";
+      });
+
+      console.log("getElementById:", document.getElementById("heading").innerText);
+      console.log("querySelector (first .text-box):", document.querySelector(".text-box").innerText);
+      console.log("querySelectorAll (all .text-box):");
+      allBoxes.forEach((el, i) => console.log(`Box ${i + 1}:`, el.innerText));
+    }
+  </script>
+
+</body>
+</html>
