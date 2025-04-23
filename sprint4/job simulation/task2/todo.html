@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dynamic To-Do List</title>
+</head>
+<body>
+  <h2>To-Do List</h2>
+  <input type="text" id="taskInput" placeholder="Enter task..." />
+  <button onclick="addTask()">Add Task</button>
+  <p id="taskError" style="color:red;"></p>
+  <ul id="taskList"></ul>
+
+  <script>
+    function addTask() {
+      const input = document.getElementById("taskInput");
+      const taskText = input.value.trim();
+      const error = document.getElementById("taskError");
+
+      if (!taskText) {
+        error.textContent = "Task cannot be empty.";
+        return;
+      }
+
+      const existingTasks = Array.from(document.querySelectorAll("#taskList li span"))
+        .map(span => span.textContent.trim());
+
+      if (existingTasks.includes(taskText)) {
+        error.textContent = "Task already exists.";
+        return;
+      }
+
+      const li = document.createElement("li");
+
+      const span = document.createElement("span");
+      span.textContent = taskText;
+
+      const editBtn = document.createElement("button");
+      editBtn.textContent = "Edit";
+      editBtn.onclick = () => {
+        const newTask = prompt("Edit your task:", span.textContent);
+        if (newTask && newTask.trim() !== "") {
+          span.textContent = newTask.trim();
+        }
+      };
+
+      const delBtn = document.createElement("button");
+      delBtn.textContent = "Delete";
+      delBtn.onclick = () => li.remove();
+
+      li.appendChild(span);
+      li.appendChild(editBtn);
+      li.appendChild(delBtn);
+
+      document.getElementById("taskList").appendChild(li);
+      input.value = "";
+      error.textContent = "";
+    }
+  </script>
+</body>
+</html>
